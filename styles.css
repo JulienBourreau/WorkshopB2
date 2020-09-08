@@ -1,3 +1,6 @@
 body{
 	position:relative; 
 }
+.brand-logo img{
+    max-width:10vw;
+}
