@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Workshop Consommation Energétique</title>
 </head>
 <body>
 
