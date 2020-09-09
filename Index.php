@@ -1,6 +1,13 @@
 <?php include_once "header.php" ?>
 <?php include_once "menu.php" ?>
 <h1>Consommation Energétique</h1>
+<?php
+require_once 'Config.php';
+$db = new PDO("mysql:host=".Config::SERVEUR.";dbname=".Config::BASE , Config::USER , Config::MDP);
+$r=$db->prepare("select * from variete v join pays_variete pv on v.id=pv.id_variete join pays p on pv.id_pays=p.Id;");
+$r->execute();
+
+$lignes=$r->fetchAll();?>
 <table>
     <thead>
         <tr>
@@ -12,14 +19,18 @@
         </tr>
     </thead>
 	<tbody>
+		<?php
+		foreach ($lignes as $ligne) {
+    ?>
 		<tr>
-                <td>Pomme</td>
-                <td>Bio</td>
-                <td>France</td>
-                <td>12</td>
-                <td>10/10</td>
+                <td><?php echo $ligne["nom"]?></td>
+                <td><?php echo $ligne["bio"]?></td>
+                <td><?php echo $ligne["Nom"]?></td>
+                <td></td>
+                <td></td>
             </tr>
-
+<?php } ?>
     </tbody>
 </table>
+
 <?php include_once "footer.php" ?>
