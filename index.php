@@ -31,9 +31,14 @@
                         ?>
                         <tr>
                             <td><?php echo $ligne["nom"]?></td>
-                            <td><?php echo $ligne["bio"]?></td>
+                            <td><?php if($ligne["bio"]=='0') {
+                                echo "Pas bio";}
+                                else echo "Bio";
+                                ?></td>
                             <td><?php echo $ligne["Nom"]?></td>
-                            <td></td>
+                            <td><a href="voirmap.php?id=<?php echo $ligne["id"] ?>"
+                                 class="btn-floating">
+                                 <i class="material-icons">map</i></td>
                             <td><?php AttribuerScore($ligne["Distance"],$ligne["bio"],$ligne["saison"])?></td>
                         </tr>
             <?php } ?>
@@ -48,29 +53,6 @@
         </div>    
     </section>
 </main>
-
-<?php include_once 'layout/footer.php' ?>
-                            <td><?php if($ligne["bio"]=='0') {
-                                echo "Pas bio";}
-                                else echo "Bio";
-                                ?></td>
-                                <td><?php echo $ligne["Nom"]?></td>
-                                <td><a href="voirmap.php?id=<?php echo $ligne["id"] ?>"
-                                 class="btn-floating">
-                                 <i class="material-icons">map</i></td>
-                                 <td></td>
-                             </tr>
-                         <?php } ?>
-                     </tbody>
-                 </table>
-                 <a href="scanner-article.php" class="btn-large">
-                    <i class="material-icons left">add_circle_outline</i>
-                    Scanner un produit
-                </a>
-
-
-            </div>    
-        </section>
-    </main>
-
+                                
+                
     <?php include_once 'layout/footer.php' ?>
