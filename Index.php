@@ -32,5 +32,9 @@ $lignes=$r->fetchAll();?>
 <?php } ?>
     </tbody>
 </table>
+<a href="ScannerArticle.php" class="btn-large">
+    <i class="material-icons left">add_circle_outline</i>
+    Scanner un produit
+</a>
 
 <?php include_once "footer.php" ?>
