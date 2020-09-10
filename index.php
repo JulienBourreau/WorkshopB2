@@ -38,9 +38,13 @@
                             <td><a href="voirmap.php?id=<?php echo $ligne["id"] ?>"
                                  class="btn-floating">
                                  <i class="material-icons">map</i></td>
-                            <td><?php AttribuerScore($ligne["Distance"],$ligne["bio"],$ligne["saison"])?></td>
+                            <td><?php echo AttribuerScore($ligne["Distance"],$ligne["bio"],$ligne["saison"])?></td>
+
                         </tr>
-            <?php } ?>
+            <?php } 
+
+            
+            ?>
                 </tbody>
             </table>
             <a href="scanner-article.php" class="btn-large">
@@ -51,5 +55,7 @@
 
         </div>    
     </section>
+    
+    
 </main>
 <?php include_once 'layout/footer.php' ?>
