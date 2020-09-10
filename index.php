@@ -1,6 +1,7 @@
-<?php include_once 'layout/header.php' ?>  
+<?php include_once 'layout/header.php' ?>
+<?php include_once 'actions/attribuer-score.php' ?>
 
-<main id="main">
+    <main id="main">
 
     <section>
         <div class="container">
@@ -33,7 +34,7 @@
                             <td><?php echo $ligne["bio"]?></td>
                             <td><?php echo $ligne["Nom"]?></td>
                             <td></td>
-                            <td></td>
+                            <td><?php AttribuerScore($ligne["Distance"],$ligne["bio"],$ligne["saison"])?></td>
                         </tr>
             <?php } ?>
                 </tbody>
