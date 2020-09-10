@@ -1,7 +1,7 @@
 <?php require_once './config.php' ?>
 
 <!DOCTYPE html>
-<html lang="">
+<html lang="fr">
 <head>
 		<meta charset="UTF-8">
 		<title>Workshop Consommation Energétique</title>
