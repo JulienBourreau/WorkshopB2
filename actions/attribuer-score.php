@@ -4,6 +4,8 @@ $r=$db->prepare("select * from pays_variete;");
 $r->execute();
 
 
+
+
 function AttribuerScore($distance,$bio,$saison){
     // $produit = [$pays, $bio, $saison];
     $note_origine = 0;
@@ -52,18 +54,25 @@ function AttribuerScore($distance,$bio,$saison){
     };
 
     if($bio == 0){
-
+        $note_bio=0;
+    }
+    elseif ($bio==1) {
+        $note_bio=10;
     };
 
-    if($saison == 0){
-
+    if($saison == "Pas_de_saison"){
+        $note_saison=0;
+    }
+    elseif ($saison=="De_saison") {
+        $note_saison=10;
     };
 
     if ($score < 10) {
         return $score;
     }
     elseif ($score > 10){
-        return 'probleme calcul du score';
+        $score = 10;
+        return $score;
     }
 }
 

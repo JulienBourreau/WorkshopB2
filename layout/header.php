@@ -1,4 +1,5 @@
 <?php require_once './config.php' ?>
+<?php include_once 'actions/attribuer-score.php' ?>
 
 <!DOCTYPE html>
 <html lang="fr">
