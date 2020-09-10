@@ -36,14 +36,14 @@
                                 ?></td>
                                 <td><?php echo $ligne["Nom"]?></td>
                                 <td><a href="voirmap.php?id=<?php echo $ligne["id"] ?>"
-                       class="btn-floating">
-                        <i class="material-icons">map</i></td>
-                                <td></td>
-                            </tr>
-                        <?php } ?>
-                    </tbody>
-                </table>
-                <a href="scanner-article.php" class="btn-large">
+                                 class="btn-floating">
+                                 <i class="material-icons">map</i></td>
+                                 <td></td>
+                             </tr>
+                         <?php } ?>
+                     </tbody>
+                 </table>
+                 <a href="scanner-article.php" class="btn-large">
                     <i class="material-icons left">add_circle_outline</i>
                     Scanner un produit
                 </a>

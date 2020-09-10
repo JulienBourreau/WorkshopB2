@@ -16,6 +16,11 @@
                     <option value="1">France</option>
                     <option value="2">Japon</option>
                     <option value="3">Brésil</option>
+                    <option value="4">Allemagne</option>
+                    <option value="5">Pérou</option>
+                    <option value="6">Uruguay</option>
+                    <option value="7">Ouganda</option>
+                    <option value="8">Vatican</option>
                 </select>
                 <label>Selectionnez un Pays</label>
             </div>
@@ -26,6 +31,13 @@
                 <option value="1">Pomme</option>
                 <option value="2">Banane</option>
                 <option value="3">Kiwi</option>
+                <option value="4">Avocat</option>
+                <option value="5">Brocoli</option>
+                <option value="6">Carotte</option>
+                <option value="7">Concombre</option>
+                <option value="8">Tomate</option>
+                <option value="9">Iceberg</option>
+
             </select>
             <label>Selectionnez un fruit/légume</label>
         </div>
@@ -33,10 +45,8 @@
              
               <select name="saison">
                 <option value="" selected></option>
-                <option value="Printemps">Printemps</option>
-                <option value="Ete">Eté</option>
-                <option value="Automne">Automne</option>
-                <option value="Hiver">Hiver</option>
+                <option value="Pas_de_saison">Pas de saison</option>
+                <option value="De_saison">De saison</option>
             </select>
             <label>Selectionnez une saison</label>
         </div>
